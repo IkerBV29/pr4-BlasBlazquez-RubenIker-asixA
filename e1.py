@@ -11,14 +11,15 @@ Reconocimiento: X > X > X > X
 
 Utilidad: INPUT() > OUTPUT()
 """
-    #Contadores p=positivo, n=negativo, zero=0
+    #Contadores p=positivo, n=negativo, z=0
+
 p=0
 n=0
 z=0
 
-for _ in range(10):
+for i in range(10):
     try:
-        numero=int(input("Ingresa 10 numeros"))
+        numero = int(input(""))
 
         if numero > 0:
             p = p + 1
@@ -26,10 +27,11 @@ for _ in range(10):
             z = z + 1
         else:
             n = n + 1
+        print("Hay ", p, "numeros positivos,", n, "numeros negativos y", z, "zeros")
 
     except ValueError:
-            print("Dades no valides")
-print("Hay ",p,"numeros positivos,",n,"numeros negativos y", z, "zeros")
+            print("Datos no validos")
+
 
 
 
