@@ -9,5 +9,15 @@ Reconocimiento: X > X > X > X
 
 Utilidad: INPUT() > OUTPUT()
 """
-
+try:
+    numeros = input()
+    numeros = numeros.split(" ")
+    n1 = int(numeros[0])
+    n2 = int(numeros[1])
+    n3 = 0
+    for i in range(n2):
+        n3 = n3 + n1
+    print(n3)
+except ValueError:
+    print("Dades no válides")
 
