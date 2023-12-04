@@ -13,7 +13,7 @@ BLANC=" "
 
  Interessant: mostrar els numeris de filera i la lletra de columna (com a la imatge)
 
-Reconocimiento: X > X > X > X
+Reconocimiento: CONSTANTES >  > X > X
 
 Utilidad: INPUT() > OUTPUT()
 """
@@ -24,11 +24,13 @@ taula = 8
 
 #Programa
 try:
-    for i in range(taula): #Repeteix tantes vegades
+    for i in range(taula): #Repeteix tantes vegades com gran sigui la taula
         taula = taula - 1
         if taula % 2 == 0:
+            #Files parells
             print(4*str(BLANC+NEGRE))
         else:
+            #Files imparells
             print(4*str(NEGRE+BLANC))
 except:
     print("No va")
