@@ -13,9 +13,6 @@ BLANC=" "
 
  Interessant: mostrar els numeris de filera i la lletra de columna (com a la imatge)
 
-Reconocimiento: CONSTANTES >  > X > X
-
-Utilidad: INPUT() > OUTPUT()
 """
 #CONSTANTES
 NEGRE="██"

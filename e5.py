@@ -5,18 +5,21 @@ M01 UF1 Pr4
 
 e5. Programa que realitza la multiplicació, de dos nombres sencers,  mitjançant sumes
 
-Reconocimiento: X > X > X > X
-
-Utilidad: INPUT() > OUTPUT()
 """
 try:
+    #Introduccio de numeros
     numeros = input()
     numeros = numeros.split(" ")
+    #Variables
     n1 = int(numeros[0])
     n2 = int(numeros[1])
     multiplicacio = 0
+
+    #Programa
     for i in range(n2):
+        #Multiplicació
         multiplicacio = multiplicacio + n1
+
     print(multiplicacio)
 except ValueError:
     print("Dades no válides")
