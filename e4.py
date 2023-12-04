@@ -17,5 +17,18 @@ Reconocimiento: X > X > X > X
 
 Utilidad: INPUT() > OUTPUT()
 """
+#CONSTANTES
+NEGRE="██"
+BLANC="   "
+taula = 8
 
-
+#Programa
+try:
+    for i in range(taula): #Repeteix tantes vegades
+        taula = taula - 1
+        if taula % 2 == 0:
+            print(4*str(BLANC+NEGRE))
+        else:
+            print(4*str(NEGRE+BLANC))
+except:
+    print("No va")
