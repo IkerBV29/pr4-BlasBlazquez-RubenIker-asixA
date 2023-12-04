@@ -14,10 +14,10 @@ try:
     numeros = numeros.split(" ")
     n1 = int(numeros[0])
     n2 = int(numeros[1])
-    n3 = 0
+    multiplicacio = 0
     for i in range(n2):
-        n3 = n3 + n1
-    print(n3)
+        multiplicacio = multiplicacio + n1
+    print(multiplicacio)
 except ValueError:
     print("Dades no válides")
 

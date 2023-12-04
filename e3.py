@@ -16,7 +16,7 @@ sumaP=0
 sumaI=0
 try:
     limit = int(input())
-    limitF = limit
+    LIMITF = limit
     while limit != 0:
         if limit % 2 == 0:
             sumaP = sumaP + limit
@@ -24,7 +24,7 @@ try:
         else:
             sumaI = sumaI + limit
             limit = limit - 1
-    print("Si el límit és", limitF, "la suma de parells es", sumaP, " i la suma de senars és ", sumaI)
+    print("Si el límit és", LIMITF, "la suma de parells es", sumaP, " i la suma de senars és ", sumaI)
 
 except ValueError:
         print("Datos invalidos")
