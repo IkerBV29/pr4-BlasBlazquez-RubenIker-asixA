@@ -13,14 +13,29 @@ OUTPUT
 4     4
 5 5 5 5 5
 
-Reconocimiento:  Alçada del triangle > secuencia del 1 al 5 > separacio entre cantonades > base del triangle
+Reconocimiento:  Altura del triangulo > secuencia de texto > separacion entre bordes > base del triangulo
 
 Utilidad: INPUT(Alçada del triangle) > OUTPUT(un conjunt de strings que formen un triangle amb nombres desde el 1 fins la alçada a les cantonades)
 """
 """
 """
-#INPUT(Alçada del triangle)
-Altura = int(input())
+try:
+    #INPUT(Altura del triangulo)
+    Altura = int(input())
 
-#secuencia del 1 al 5
-for i in range(int(Altura)+1):print(i)
+    #Secuencia de texto
+    if 1 < Altura < 10:
+        print("1")
+        if 2 < Altura < 10:
+            for i in range(Altura-2):
+                #Separacion entre bordes
+                print(str(i+2)+" "*i+str(i+2))
+            #Base del triangulo
+            print(str(Altura)*(Altura))
+        #Caso excepcional a la funcion anterior
+        else:
+            print("22")
+    else:
+        print("Has leido el enunciado? Altura entre 2 i 9.")
+except:
+    print("Has leido el enunciado? La alzada es un numero")
