@@ -11,8 +11,8 @@ try:
     numeros = input()
     numeros = numeros.split(" ")
     #Variables
-    n1 = int(numeros[0])
-    n2 = int(numeros[1])
+    n1 = abs(int(numeros[0]))
+    n2 = abs(int(numeros[1]))
     multiplicacio = 0
 
     #Programa
@@ -23,4 +23,3 @@ try:
     print(multiplicacio)
 except ValueError:
     print("Dades no válides")
-
