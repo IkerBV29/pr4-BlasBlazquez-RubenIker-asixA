@@ -8,9 +8,15 @@ els nombres parells inferiors a un número límit, que l’usuari introdueix per
  Ex: 	ssi el límit é 31 sumaParells 240 i sumaSenars 225
 si el límit és 54 sumaParells 702 i sumaSenars 729
 
-Reconocimiento: X > X > X > X
+Reconocimiento: Insertar numero limite > Suma pares  > Suma senares > Imprime sumas pares y senares
 
-Utilidad: INPUT() > OUTPUT()
+
+
+
+#Imprime sumas pares y senares
+
+
+Utilidad: INPUT(Insertar numero limite) > OUTPUT(Imprime sumas pares y senares)
 """
 sumaP=0
 sumaI=0
@@ -18,12 +24,15 @@ try:
     limit = int(input())
     LIMITF = limit
     while limit != 0:
+        # Suma pares
         if limit % 2 == 0:
             sumaP = sumaP + limit
             limit = limit - 1
+        # Suma senares
         else:
             sumaI = sumaI + limit
             limit = limit - 1
+    # Insertar numero limite
     print("Si el límit és", LIMITF, "la suma de parells es", sumaP, " i la suma de senars és ", sumaI)
 
 except ValueError:
